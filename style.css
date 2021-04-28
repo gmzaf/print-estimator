@@ -8,8 +8,10 @@ body {
   padding: 10px;
 }
 
-label {
-  display: none;
+@media screen and (max-width: 320px) {
+  label {
+    display: none;
+  }
 }
 
 #output {
