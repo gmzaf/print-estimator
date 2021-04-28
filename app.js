@@ -2,7 +2,7 @@
 let radioChoice, inputHeight, inputWidth, substrate, inputArea, billArea, printCost, cpi, inchHeight, inchWidth, errorNote;
 const costGroup01 = ["Archival Matte Light (230 gsm)", "Archival Textured Light (285 gsm)"];
 const costGroup02 = ["Archival Matte (310 gsm)"];
-const costGroup03 = ["Archival Textured (310 gsm)", "Archival Gloss Baryta (320 gsm)", "Archival Canvas (450 gsm)"];
+const costGroup03 = ["Archival Textured (310 gsm)", "Archival Photo Gloss Baryta (320 gsm)", "Archival Canvas (450 gsm)"];
 const costGroup04 = ["Metalic (290 gsm)", "Canvas (380 gsm)"];
 const costGroup05 = ["Matte Coated (180 gsm)", "Matte Fiber (200 gsm)", "Luster (240 gsm)", "Glossy (240 gsm)"];
 const paperMax24 = ["Matte Fiber (200 gsm)"];
@@ -111,19 +111,19 @@ checkInput = () => { // checking if inputs are valid and generate error messages
     inchWidth = inputWidth; 
   };
   if (!billArea>0 || substrate=== "not-valid") {
-    errorNote = `Please enter valid dimensions and select substrate. `
+    errorNote = `Enter dimensions and select substrate. `
   }
   else if (paperMax24.includes(substrate) && Math.min(inchHeight, inchWidth)>23.5) {
-    errorNote = `${substrate} comes in 24" rolls; <br>Your dimension ${Math.min(inputHeight, inputWidth)}${radioChoice} exceeds the printable area (23.5").`
+    errorNote = `${substrate} comes in 24" rolls; Your dimension ${Math.min(inputHeight, inputWidth)}${radioChoice} exceeds the printable area (23.5").`
   }
   else if (paperMax36.includes(substrate) && Math.min(inchHeight, inchWidth)>35.5) {
-    errorNote = `${substrate} comes in 36" rolls; <br>Your dimension ${Math.min(inputHeight, inputWidth)}${radioChoice} exceeds the printable area (35.5").`
+    errorNote = `${substrate} comes in 36" rolls; Your dimension ${Math.min(inputHeight, inputWidth)}${radioChoice} exceeds the printable area (35.5").`
   }
   else if(Math.min(inchHeight, inchWidth)>43.5) {
-    errorNote = `${substrate} comes in 44" rolls; <br>Your dimension ${Math.min(inputHeight, inputWidth)}${radioChoice} exceeds the printable area (43.5").`
+    errorNote = `${substrate} comes in 44" rolls; Your dimension ${Math.min(inputHeight, inputWidth)}${radioChoice} exceeds the printable area (43.5").`
   }
   else if(Math.max(inchHeight, inchWidth)>88) {
-    errorNote = 'Large prints require a custom quotation. <br>Please contact us for details.'
+    errorNote = 'Large prints require a custom quotation. Please contact us for details.'
   }
   else {errorNote = "no errors";};
   console.log("errorNote: ", errorNote);
