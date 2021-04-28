@@ -10,7 +10,7 @@
 <body>
 
 <div id="calculator">
-<h3>Print Cost Estimator</h3>
+<h4>Print Cost Estimator</h4>
 
 <form>
  <label for="measure"> Measurement:&nbsp;&nbsp;
@@ -18,15 +18,15 @@
   <input type="radio" name="measure" value="mm">Milimeters
   </label><br>
 
-  <label for="inputHeight">Print Height: &nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="number" min="1" max="88" id="inputHeight" placeholder="height" pattern="" required>
-  </label><br>
+  <label for="inputHeight">Print Height: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="number" min="1" max="88" id="inputHeight" placeholder="H" pattern="" required>
+  <br>
 
-  <label for="inputWidth">Print Width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="number" min="1" max="88" id="inputWidth" placeholder="width" pattern="" required>
-  </label><br>
+  <label for="inputWidth">Print Width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="number" min="1" max="88" id="inputWidth" placeholder="W" pattern="" required>
+  <br>
   
-  <label for="substrate">Print Material:&nbsp;&nbsp;&nbsp;
+  <label for="substrate">Print Material:&nbsp;&nbsp;&nbsp;</label>
   <select id="substrate" required>
     <option value="not-valid">-- Select substrate option --</option>
     <option value="" disabled>-- ARCHIVAL MATERIALS --</option>
@@ -44,7 +44,7 @@
     <option value="Metalic (290 gsm)" disabled>Metalic (290 gsm)</option>
     <option value="Canvas (380 gsm)">Canvas (380 gsm)</option>
   </select>
-  </label>
+  
   <br><br>
   <input type="button" id="button" value="Estimate cost">
 
