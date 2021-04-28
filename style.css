@@ -13,11 +13,6 @@ label {
   display: none;
 }
 
-label:before {
-  content: "\a";
-  white-space: pre;
-}
-
 #output {
   margin-top: 1rem;
 }
