@@ -84,7 +84,7 @@ console.log(`setCPI: billArea:${billArea}, substrate:${substrate}, cpi:${cpi}`)
 }
 
 function currencyFormat(num) {
-  return 'HK$' + num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') 
+  return 'HK$ ' + num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') 
 }
 
 logInputValues = () => {
@@ -95,7 +95,7 @@ displayOutput = () => {
   checkInput();
   if (errorNote === "no errors") {
     document.querySelector("#output").innerHTML = `
-    ${inputHeight}x${inputWidth}${radioChoice} on ${substrate}: <strong>${currencyFormat(printCost)}</strong>
+    ${inputHeight}x${inputWidth}${radioChoice}<br>${substrate}<br><strong>${currencyFormat(printCost)}</strong>
     `
 } else {
   document.querySelector("#output").innerHTML = `<p style="color:red">${errorNote}</p>`
