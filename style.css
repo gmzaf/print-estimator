@@ -9,6 +9,10 @@ body {
   width: 400px; 
 }
 
+label {
+  display: none;
+}
+
 label:before {
   content: "\a";
   white-space: pre;
