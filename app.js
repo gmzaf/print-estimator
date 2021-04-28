@@ -111,7 +111,7 @@ checkInput = () => { // checking if inputs are valid and generate error messages
     inchWidth = inputWidth; 
   };
   if (!billArea>0 || substrate=== "not-valid") {
-    errorNote = `Enter dimensions and select substrate. `
+    errorNote = `Missing inputs. `
   }
   else if (paperMax24.includes(substrate) && Math.min(inchHeight, inchWidth)>23.5) {
     errorNote = `${substrate} comes in 24" rolls; Your dimension ${Math.min(inputHeight, inputWidth)}${radioChoice} exceeds the printable area (23.5").`
