@@ -11,9 +11,10 @@ body {
 input[type=number] {
   width:40px;
 }
-
-label {
-  display: none;
+@media screen and (max-width: 300px) {
+  label {
+    display: none;
+  }
 }
 
 #output {
