@@ -11,7 +11,7 @@ body {
 input[type=number] {
   width:40px;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px;) {
   label {
     display: none;
   }
