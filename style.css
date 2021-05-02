@@ -44,11 +44,10 @@ ul {
 
 li {
   padding: 5px;
-  border: black;
 }
 
 .newItem {
-  background-color: rgb(228, 220, 220);
+  background-color: rgb(212, 212, 212);
 }
 .newItem:nth-child(odd) {
   background-color: rgb(245, 245, 245);
