@@ -11,45 +11,41 @@
 <body>
 
 <div id="estimator">
-<h3>Print Cost Estimator</h3>
+<h3>Print Cost Calculator</h3>
 
 <form>
 
-  <label for="measure"> Measurement:&nbsp;
-    <input type="radio" name="measure"  id="radioin" value="in" checked>Inches
-    <input type="radio" name="measure" id="radiomm" value="mm">Milimeters
-    </label><br>
+  <input type="radio" name="measure"  id="radioin" value="in" checked>Inches
+  <input type="radio" name="measure" id="radiomm" value="mm">Milimeters
+  <br><br>
 
-  <label for="inputHeight">Print Height: &nbsp;&nbsp;&nbsp;&nbsp;
-      <input type="number" min="1" max="88" id="inputHeight" placeholder="in" pattern="" value="" required>
-    </label><br>
-
-  <label for="inputWidth">Print Width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <input type="number" min="1" max="88" id="inputWidth" placeholder="in" pattern="" value="" required>
-    </label><br>
-    
-  <label for="substrate">Print Material:&nbsp;&nbsp;
-    <select id="substrate" required>
-      <option value="not-valid">-- Select substrate option --</option>
-      <option value="" disabled>-- ARCHIVAL MATERIALS --</option>
-      <option value="Archival Matte Light (230 gsm)"> Archival - Matte Light (230 gsm)</option>
-      <option value="Archival Matte (310 gsm)" name="photorag"> Archival - Matte (310 gsm)</option>
-      <option value="Archival Textured Light (285 gsm)"> Archival - Textured Light (285 gsm)</option>
-      <option value="Archival Textured (310 gsm)"> Archival - Textured (310 gsm)</option>
-      <option value="Archival Photo Gloss Baryta (320 gsm)"> Archival - Gloss Baryta (320 gsm)</option>
-      <option value="Archival Canvas (450 gsm)"> Archival - Canvas (450 gsm)</option>
-      <option value="" disabled>-- FINE ART MATERIALS --</option>
-      <option value="Matte Coated (180 gsm)">Matte Coated (180 gsm)</option>
-      <option value="Matte Fiber (200 gsm)">Matte Fiber (200 gsm)</option>
-      <option value="Luster (240 gsm)">Luster (240 gsm)</option>
-      <option value="Glossy (240 gsm)">Glossy (240 gsm)</option>
-      <option value="Metalic (290 gsm)" disabled>Metalic (290 gsm)</option>
-      <option value="Canvas (380 gsm)">Canvas (380 gsm)</option>
-    </select>
-    </label>
-    <br><br>
-
-  <input type="button" id="estButton" title="Click button to estimate cost" value="Estimate cost">
+  <label for="inputHeight">H
+    <input type="number" min="1" max="88" id="inputHeight" placeholder="in" pattern="" value="" required>
+  </label>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="inputWidth">W
+    <input type="number" min="1" max="88" id="inputWidth" placeholder="in" pattern="" value="" required>
+  </label><br><br>
+  
+  <select id="substrate" required>
+    <option value="not-valid">-- Please Select substrate --</option>
+    <option value="" disabled>-- ARCHIVAL MATERIALS --</option>
+    <option value="Archival Matte Light (230 gsm)"> Archival - Matte Light (230 gsm)</option>
+    <option value="Archival Matte (310 gsm)" name="photorag"> Archival - Matte (310 gsm)</option>
+    <option value="Archival Textured Light (285 gsm)"> Archival - Textured Light (285 gsm)</option>
+    <option value="Archival Textured (310 gsm)"> Archival - Textured (310 gsm)</option>
+    <option value="Archival Photo Gloss Baryta (320 gsm)"> Archival - Gloss Baryta (320 gsm)</option>
+    <option value="Archival Canvas (450 gsm)"> Archival - Canvas (450 gsm)</option>
+    <option value="" disabled>-- FINE ART MATERIALS --</option>
+    <option value="Matte Coated (180 gsm)">Matte Coated (180 gsm)</option>
+    <option value="Matte Fiber (200 gsm)">Matte Fiber (200 gsm)</option>
+    <option value="Luster (240 gsm)">Luster (240 gsm)</option>
+    <option value="Glossy (240 gsm)">Glossy (240 gsm)</option>
+    <option value="Metalic (290 gsm)" disabled>Metalic (290 gsm)</option>
+    <option value="Canvas (380 gsm)">Canvas (380 gsm)</option>
+  </select>
+  <br><br>
+  <input type="button" id="estButton" value="Estimate cost">
 
 </form>
 
