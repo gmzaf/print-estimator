@@ -5,11 +5,6 @@
   width: 650px; 
 }
 
-label:before {
-  content: "\a";
-  white-space: pre;
-}
-
 #output {
   margin-top: 1rem;
 }
@@ -20,7 +15,7 @@ label:before {
 
 .newItem {
   display:flex;
-  justify-content: space-between;
+  justify-content: flex-start;;
   align-items: center;
 }
 
@@ -37,9 +32,9 @@ label:before {
 }
 
 ul {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 20px 0; /* Remove margins */
+  list-style-type: none; 
+  padding: 0; 
+  margin: 20px 0; 
 }
 
 li {
