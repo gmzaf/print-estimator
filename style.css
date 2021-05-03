@@ -1,8 +1,6 @@
-
 #estimator {
   margin: 10px;
   padding: 10px;
-  width: 650px; 
 }
 
 #output {
@@ -14,13 +12,17 @@
 }
 
 .newItem {
+  background-color: rgb(212, 212, 212);
   display:flex;
-  justify-content: flex-start;;
+  justify-content: space-between;;
   align-items: center;
 }
 
+.newItem:nth-child(odd) {
+  background-color: rgb(245, 245, 245);
+}
 .delButton {
-  margin: 5px 10px;
+  margin: 5px 10px 5px 50px;
 }
 
 .fa-trash {
@@ -33,17 +35,14 @@
 
 ul {
   list-style-type: none; 
-  padding: 0; 
-  margin: 20px 0; 
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
 }
 
 li {
   padding: 5px;
 }
 
-.newItem {
-  background-color: rgb(212, 212, 212);
-}
-.newItem:nth-child(odd) {
-  background-color: rgb(245, 245, 245);
-}
