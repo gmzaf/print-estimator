@@ -3,7 +3,7 @@ let radioChoice, inputHeight, inputWidth, substrate, inputArea, billArea, printC
 const costGroup01 = ["Archival Textured", "Archival Glossy", "Archival Canvas"];
 const costGroup02 = ["Archival Matte"];
 const costGroup03 = ["Archival Matte Light", "Archival Textured Light"];
-const costGroup04 = ["Fine Art Matte Fiber", " Fine Art Metalic", "Fine Art Canvas"];
+const costGroup04 = ["Fine Art Matte Fiber", " Fine Art Metallic", "Fine Art Canvas"];
 const costGroup05 = ["Fine Art Matte Coated", "Fine Art Luster", "Fine Art Glossy"];
 const paperMax24 = [""];
 const paperMax36 = ["Archival Matte Light"];
