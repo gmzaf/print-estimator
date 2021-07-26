@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>App</title>
+  <title>Print Estimator (v4B)</title>
 </head>
 <body>
 
@@ -28,36 +28,33 @@
   </label><br><br>
   
   <select id="substrate" required>
-    <option value="not-valid">-- Please Select substrate --</option>
-    <option value="" disabled>-- ARCHIVAL MATERIALS --</option>
-    <option value="Archival Matte Light (230 gsm)"> Archival - Matte Light (230 gsm)</option>
-    <option value="Archival Matte (310 gsm)" name="photorag"> Archival - Matte (310 gsm)</option>
-    <option value="Archival Textured Light (285 gsm)"> Archival - Textured Light (285 gsm)</option>
-    <option value="Archival Textured (310 gsm)"> Archival - Textured (310 gsm)</option>
-    <option value="Archival Photo Gloss Baryta (320 gsm)"> Archival - Gloss Baryta (320 gsm)</option>
-    <option value="Archival Canvas (450 gsm)"> Archival - Canvas (450 gsm)</option>
-    <option value="" disabled>-- FINE ART MATERIALS --</option>
-    <option value="Matte Coated (180 gsm)">Matte Coated (180 gsm)</option>
-    <option value="Matte Fiber (200 gsm)">Matte Fiber (200 gsm)</option>
-    <option value="Luster (240 gsm)">Luster (240 gsm)</option>
-    <option value="Glossy (240 gsm)">Glossy (240 gsm)</option>
-    <option value="Metalic (290 gsm)" disabled>Metalic (290 gsm)</option>
-    <option value="Canvas (380 gsm)">Canvas (380 gsm)</option>
+    <option value="not-valid">-- Select substrate option --</option>
+    <option value="" disabled>-- ARCHIVAL --</option>
+    <option value="Archival Matte"> Archival Matte</option>
+    <option value="Archival Matte Light"> Archival Matte Light</option>
+    <option value="Archival Textured"> Archival Textured</option>
+    <option value="Archival Textured Light"> Archival Textured Light</option>
+    <option value="Archival Glossy"> Archival Glossy</option>
+    <option value="Archival Canvas"> Archival Canvas</option>
+    <option value="" disabled>-- FINE ART PREMIUM --</option>
+    <option value="Fine Art Matte Fiber">Matte Fiber</option>
+    <option value="Fine Art Metalic">Metalic</option>
+    <option value="Fine Art Canvas">Canvas</option>
+    <option value="" disabled>-- FINE ART --</option>
+    <option value="Fine Art Luster">Luster</option>
+    <option value="Fine Art Glossy">Glossy</option>
+    <option value="Fine Art Matte Coated">Matte Coated</option>
   </select>
   <br><br>
-  <input type="button" id="estButton" value="Add to estimate">
+  <input type="button" id="estButton" value="Estimate cost">
 
 </form>
 
 <div style="color:red" id="errorNote"></div>
-
+<div id="output"></div>
 
 <ul id="list"></ul>
 
-<div id="total"></div>
-
-
-</div>  
 
 <script src="app.js"></script>
 </body>
