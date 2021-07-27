@@ -163,7 +163,7 @@ const calcBillValues = () => {
   radioChoice === "mm" ? billArea = Math.ceil(inputHeight/25.4) * Math.ceil(inputWidth/25.4) : billArea = inputArea;
   if (billArea < 80) { billArea = 80 }
   setCPI();
-  printCost = billArea * cpi;
+  printCost = Math.ceil(billArea * cpi);
 };
 
 const logBillValues = () => {
