@@ -159,8 +159,8 @@ const checkInput = () => { // checking if inputs are valid and generate error me
 };
 
 const calcBillValues = () => {
-  inputArea = inputHeight * inputWidth;
-  radioChoice === "mm" ? billArea = Math.ceil(inputArea / 645.16) : billArea = Math.ceil(inputArea);
+  inputArea = Math.ceil(inputHeight) * Math.ceil(inputWidth);
+  radioChoice === "mm" ? billArea = Math.ceil(inputHeight/25.4) * Math.ceil(inputWidth/25.4) : billArea = inputArea;
   if (billArea < 80) { billArea = 80 }
   setCPI();
   printCost = billArea * cpi;
